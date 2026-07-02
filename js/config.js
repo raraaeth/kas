@@ -195,6 +195,10 @@ heroQuote:
 
 $("#heroQuote"),
 
+heroCharacter:
+
+$("#heroCharacter"),
+
 /* ======================================
    SUMMARY
 ====================================== */
