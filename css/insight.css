@@ -1,0 +1,134 @@
+/* =====================================================
+   KAS BULANAN SNA
+   FILE : css/insight.css
+   DESCRIPTION : Insight Section
+===================================================== */
+
+
+/* =====================================================
+   INSIGHT LIST
+===================================================== */
+
+.insight-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+
+/* =====================================================
+   INSIGHT CARD
+===================================================== */
+
+.insight-card{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    padding:22px;
+
+    transition:var(--transition);
+
+}
+
+.insight-card:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:var(--shadow);
+
+}
+
+
+/* =====================================================
+   ICON
+===================================================== */
+
+.insight-icon{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:52px;
+
+    height:52px;
+
+    flex-shrink:0;
+
+    border-radius:16px;
+
+    background:var(--secondary);
+
+    font-size:24px;
+
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.insight-content{
+
+    flex:1;
+
+}
+
+.insight-content h3{
+
+    margin-bottom:8px;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    color:var(--text);
+
+}
+
+.insight-content p{
+
+    font-size:14px;
+
+    color:var(--text-light);
+
+    line-height:1.7;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:768px){
+
+    .insight-card{
+
+        padding:18px;
+
+        gap:14px;
+
+    }
+
+    .insight-icon{
+
+        width:46px;
+
+        height:46px;
+
+        font-size:22px;
+
+    }
+
+}
