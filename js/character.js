@@ -6,49 +6,70 @@
 
 function updateHeroCharacter(){
 
-    const balance=
-    Kas.dashboard.summary.balance;
+    const summary =
 
-    const income=
-    Kas.dashboard.summary.income;
+    Kas.dashboard.summary;
 
-    const expense=
-    Kas.dashboard.summary.expense;
+    const progress =
 
-    const unpaid=
-    Kas.dashboard.progress.unpaid;
+    Kas.dashboard.progress;
 
-    const progress=
-    Kas.dashboard.progress.percent;
+    let image =
 
-    let image=
     "happy.png";
 
-    if(progress>=100){
+    if(
 
-        image="excited.png";
+        progress.percent >= 100
 
-    }
+    ){
 
-    else if(balance<=0){
+        image =
 
-        image="sad.png";
-
-    }
-
-    else if(expense>income){
-
-        image="warning.png";
+        "excited.png";
 
     }
 
-    else if(unpaid>0){
+    else if(
 
-        image="thinking.png";
+        summary.balance <= 0
+
+    ){
+
+        image =
+
+        "sad.png";
 
     }
 
-    DOM.heroCharacter.src=
+    else if(
+
+        summary.expense >=
+
+        summary.income * 0.5
+
+    ){
+
+        image =
+
+        "warning.png";
+
+    }
+
+    else if(
+
+        progress.unpaid.length > 0
+
+    ){
+
+        image =
+
+        "thinking.png";
+
+    }
+
+    DOM.heroCharacter.src =
+
     `assets/images/${image}`;
 
 }
