@@ -1,0 +1,187 @@
+/* =====================================================
+   KAS BULANAN SNA
+   FILE : css/summary.css
+   DESCRIPTION : Summary Card
+===================================================== */
+
+
+/* =====================================================
+   SUMMARY CARD
+===================================================== */
+
+.summary-card{
+
+    padding:26px;
+
+}
+
+
+/* =====================================================
+   SALDO
+===================================================== */
+
+.summary-balance{
+
+    text-align:center;
+
+}
+
+.summary-label{
+
+    margin-bottom:8px;
+
+    font-size:14px;
+
+    color:var(--text-light);
+
+}
+
+.summary-balance h2{
+
+    font-size:40px;
+
+    font-weight:800;
+
+    color:var(--primary-dark);
+
+}
+
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.summary-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+
+/* =====================================================
+   ITEM
+===================================================== */
+
+.summary-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    background:var(--secondary);
+
+    transition:var(--transition);
+
+}
+
+.summary-item:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+
+/* =====================================================
+   ICON
+===================================================== */
+
+.summary-icon{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:50%;
+
+    background:#FFFFFF;
+
+    font-size:24px;
+
+    flex-shrink:0;
+
+}
+
+
+/* =====================================================
+   NAME
+===================================================== */
+
+.summary-name{
+
+    margin-bottom:4px;
+
+    font-size:13px;
+
+    color:var(--text-light);
+
+}
+
+
+/* =====================================================
+   VALUE
+===================================================== */
+
+.summary-item strong{
+
+    display:block;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:var(--text);
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:768px){
+
+    .summary-card{
+
+        padding:22px;
+
+    }
+
+    .summary-balance h2{
+
+        font-size:32px;
+
+    }
+
+    .summary-grid{
+
+        grid-template-columns:1fr;
+
+        gap:14px;
+
+    }
+
+    .summary-item{
+
+        padding:16px;
+
+    }
+
+}
