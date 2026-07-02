@@ -1,0 +1,284 @@
+/* =====================================================
+   KAS BULANAN SNA
+   FILE : css/layout.css
+   DESCRIPTION : Layout
+===================================================== */
+
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+.section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+
+/* =====================================================
+   ACTIVITY
+===================================================== */
+
+.activity-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+
+/* =====================================================
+   ACTIVITY CARD
+===================================================== */
+
+.activity-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:22px;
+
+    min-height:280px;
+
+}
+
+
+/* =====================================================
+   ACTIVITY LIST
+===================================================== */
+
+.activity-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+    flex:1;
+
+}
+
+
+/* =====================================================
+   ACTIVITY ITEM
+===================================================== */
+
+.activity-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+
+/* =====================================================
+   STATISTIC
+===================================================== */
+
+.statistic-card{
+
+    display:grid;
+
+    grid-template-columns:220px 1fr;
+
+    gap:24px;
+
+    align-items:center;
+
+    padding:24px;
+
+}
+
+
+/* =====================================================
+   CHART
+===================================================== */
+
+.chart-container{
+
+    width:220px;
+
+    height:220px;
+
+    margin:auto;
+
+}
+
+
+/* =====================================================
+   STATISTIC DETAIL
+===================================================== */
+
+.statistic-detail{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+
+/* =====================================================
+   STATISTIC ITEM
+===================================================== */
+
+.statistic-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding-bottom:12px;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.statistic-item:last-child{
+
+    border-bottom:none;
+
+    padding-bottom:0;
+
+}
+
+
+/* =====================================================
+   INSIGHT
+===================================================== */
+
+.insight-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+
+/* =====================================================
+   LOADING
+===================================================== */
+
+#loadingOverlay,
+
+#emptyState,
+
+#errorState{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+    background:rgba(
+
+        255,
+
+        248,
+
+        252,
+
+        .92
+
+    );
+
+    backdrop-filter:blur(8px);
+
+    z-index:9999;
+
+}
+
+
+/* =====================================================
+   LOADING CARD
+===================================================== */
+
+.loading-card,
+
+.empty-card,
+
+.error-card{
+
+    width:100%;
+
+    max-width:360px;
+
+    padding:32px 24px;
+
+    text-align:center;
+
+}
+
+.loading-card h3,
+
+.empty-card h3,
+
+.error-card h3{
+
+    margin:18px 0 10px;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:768px){
+
+    .activity-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .activity-card{
+
+        min-height:auto;
+
+    }
+
+    .statistic-card{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .chart-container{
+
+        width:180px;
+
+        height:180px;
+
+    }
+
+}
