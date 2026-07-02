@@ -1,0 +1,200 @@
+/* =====================================================
+   KAS BULANAN SNA
+   FILE : css/footer.css
+   DESCRIPTION : Footer
+===================================================== */
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+#footer{
+
+    margin-top:40px;
+
+    margin-bottom:20px;
+
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.footer-container{
+
+    padding:28px;
+
+    border-radius:var(--radius-lg);
+
+    background:linear-gradient(
+
+        135deg,
+
+        #FFF4F9,
+
+        #FFFFFF
+
+    );
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow);
+
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.footer-container h3{
+
+    margin-bottom:8px;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:var(--primary-dark);
+
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.footer-container p{
+
+    font-size:14px;
+
+    color:var(--text-light);
+
+    line-height:1.7;
+
+}
+
+
+/* =====================================================
+   BOTTOM
+===================================================== */
+
+.footer-bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:16px;
+
+    margin-top:20px;
+
+    font-size:14px;
+
+    color:var(--text-light);
+
+}
+
+.footer-bottom strong{
+
+    color:var(--primary);
+
+}
+
+
+/* =====================================================
+   LOADING CARD
+===================================================== */
+
+.loading-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+
+/* =====================================================
+   EMPTY
+===================================================== */
+
+.empty-card{
+
+    padding:36px 24px;
+
+}
+
+.empty-card h2{
+
+    font-size:54px;
+
+    margin-bottom:10px;
+
+}
+
+.empty-card h3{
+
+    margin-bottom:8px;
+
+}
+
+
+/* =====================================================
+   ERROR
+===================================================== */
+
+.error-card{
+
+    padding:36px 24px;
+
+}
+
+.error-card h2{
+
+    font-size:52px;
+
+    margin-bottom:10px;
+
+}
+
+.error-card h3{
+
+    margin-bottom:8px;
+
+    color:var(--danger);
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:768px){
+
+    .footer-container{
+
+        padding:22px;
+
+    }
+
+    .footer-bottom{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:8px;
+
+    }
+
+}
