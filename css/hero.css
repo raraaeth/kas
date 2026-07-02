@@ -1,0 +1,337 @@
+/* =====================================================
+   KAS BULANAN SNA
+   FILE : css/hero.css
+   DESCRIPTION : Hero Header
+===================================================== */
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+
+    margin-bottom:24px;
+
+}
+
+
+/* =====================================================
+   HERO CONTAINER
+===================================================== */
+
+.hero-container{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:28px;
+
+    border-radius:var(--radius-lg);
+
+    background:linear-gradient(
+
+        135deg,
+
+        #FFE5F0 0%,
+
+        #FFF3F8 55%,
+
+        #FFFFFF 100%
+
+    );
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+
+/* =====================================================
+   DECORATION
+===================================================== */
+
+.hero-container::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    top:-80px;
+
+    right:-60px;
+
+    background:rgba(
+
+        255,
+
+        143,
+
+        184,
+
+        .18
+
+    );
+
+}
+
+.hero-container::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    bottom:-40px;
+
+    left:-30px;
+
+    background:rgba(
+
+        255,
+
+        215,
+
+        232,
+
+        .35
+
+    );
+
+}
+
+
+/* =====================================================
+   HERO CONTENT
+===================================================== */
+
+.hero-container>*{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/* =====================================================
+   BADGE
+===================================================== */
+
+.hero-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:8px 14px;
+
+    margin-bottom:18px;
+
+    border-radius:999px;
+
+    background:rgba(
+
+        255,
+
+        255,
+
+        255,
+
+        .75
+
+    );
+
+    backdrop-filter:blur(8px);
+
+    font-size:13px;
+
+    font-weight:600;
+
+    color:var(--primary-dark);
+
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.hero h1{
+
+    margin-bottom:12px;
+
+    font-size:34px;
+
+    font-weight:800;
+
+    color:var(--text);
+
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.hero p{
+
+    max-width:320px;
+
+    margin-bottom:20px;
+
+    color:var(--text-light);
+
+    line-height:1.7;
+
+}
+
+
+/* =====================================================
+   QUOTE
+===================================================== */
+
+.hero-quote{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 18px;
+
+    margin-bottom:24px;
+
+    border-radius:999px;
+
+    background:rgba(
+
+        255,
+
+        255,
+
+        255,
+
+        .7
+
+    );
+
+    backdrop-filter:blur(10px);
+
+    font-size:14px;
+
+    color:var(--text);
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.hero-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:16px;
+
+    margin-top:10px;
+
+}
+
+
+/* =====================================================
+   MONTH
+===================================================== */
+
+.hero-month{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-size:14px;
+
+    color:var(--text-light);
+
+}
+
+
+/* =====================================================
+   VERSION
+===================================================== */
+
+.hero-version{
+
+    padding:6px 14px;
+
+    border-radius:999px;
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    font-size:12px;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:768px){
+
+    .hero-container{
+
+        padding:22px;
+
+    }
+
+    .hero h1{
+
+        font-size:28px;
+
+    }
+
+    .hero p{
+
+        max-width:100%;
+
+    }
+
+    .hero-quote{
+
+        display:flex;
+
+        border-radius:16px;
+
+    }
+
+  }
