@@ -31,6 +31,8 @@ async function initializeApp(){
 
         updateUI();
 
+       updateHeroCharacter();
+
         initializeEvents();
 
         Kas.ready=true;
