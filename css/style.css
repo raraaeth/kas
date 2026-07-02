@@ -1,0 +1,360 @@
+/* =====================================================
+   KAS BULANAN SNA
+   FILE : css/style.css
+   DESCRIPTION : Global Style
+===================================================== */
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+/* =====================================================
+   HTML
+===================================================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body{
+
+    font-family:var(--font-family);
+
+    font-size:var(--font-md);
+
+    color:var(--text);
+
+    background:var(--background);
+
+    line-height:1.6;
+
+    -webkit-font-smoothing:antialiased;
+
+}
+
+
+/* =====================================================
+   APP
+===================================================== */
+
+#app{
+
+    width:100%;
+
+    max-width:var(--container);
+
+    margin:auto;
+
+    padding:24px 16px 40px;
+
+}
+
+
+/* =====================================================
+   LINK
+===================================================== */
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+}
+
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    font:inherit;
+
+    background:none;
+
+}
+
+
+/* =====================================================
+   INPUT
+===================================================== */
+
+input,
+
+textarea,
+
+select{
+
+    font:inherit;
+
+    outline:none;
+
+}
+
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+.section{
+
+    margin-bottom:24px;
+
+}
+
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+
+.section-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:16px;
+
+}
+
+.section-title{
+
+    font-size:18px;
+
+    font-weight:700;
+
+}
+
+.section-link{
+
+    font-size:14px;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.section-link:hover{
+
+    opacity:.75;
+
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.summary-card,
+
+.progress-card,
+
+.activity-card,
+
+.statistic-card,
+
+.insight-card,
+
+.loading-card,
+
+.empty-card,
+
+.error-card{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+}
+
+
+/* =====================================================
+   LOADING
+===================================================== */
+
+.hidden{
+
+    display:none !important;
+
+}
+
+
+/* =====================================================
+   DIVIDER
+===================================================== */
+
+.summary-divider,
+
+.progress-divider,
+
+.footer-divider{
+
+    width:100%;
+
+    height:1px;
+
+    background:var(--border);
+
+    margin:20px 0;
+
+}
+
+
+/* =====================================================
+   ANIMATION
+===================================================== */
+
+.fade-in{
+
+    animation:fadeIn .4s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(12px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* =====================================================
+   SPIN
+===================================================== */
+
+.loading-spinner{
+
+    width:48px;
+
+    height:48px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    border:4px solid
+
+    var(--primary-light);
+
+    border-top-color:
+
+    var(--primary);
+
+    animation:spin .8s linear infinite;
+
+}
+
+@keyframes spin{
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+
+/* =====================================================
+   TEXT
+===================================================== */
+
+h1,
+
+h2,
+
+h3,
+
+h4{
+
+    line-height:1.3;
+
+}
+
+strong{
+
+    font-weight:700;
+
+}
+
+p{
+
+    color:var(--text-light);
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width:768px){
+
+    #app{
+
+        padding:18px 14px 32px;
+
+    }
+
+}
