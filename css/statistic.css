@@ -1,0 +1,195 @@
+/* =====================================================
+   KAS BULANAN SNA
+   FILE : css/statistic.css
+   DESCRIPTION : Statistic Section
+===================================================== */
+
+
+/* =====================================================
+   STATISTIC CARD
+===================================================== */
+
+.statistic-card{
+
+    padding:24px;
+
+}
+
+
+/* =====================================================
+   CHART
+===================================================== */
+
+.chart-container{
+
+    position:relative;
+
+    width:220px;
+
+    height:220px;
+
+    margin:auto;
+
+}
+
+
+/* =====================================================
+   DETAIL
+===================================================== */
+
+.statistic-detail{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    gap:18px;
+
+}
+
+
+/* =====================================================
+   ITEM
+===================================================== */
+
+.statistic-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:14px 0;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.statistic-item:last-child{
+
+    border-bottom:none;
+
+}
+
+
+/* =====================================================
+   LABEL
+===================================================== */
+
+.statistic-item div{
+
+    font-size:14px;
+
+    color:var(--text-light);
+
+}
+
+
+/* =====================================================
+   VALUE
+===================================================== */
+
+.statistic-item strong{
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:var(--text);
+
+}
+
+
+/* =====================================================
+   LEGEND
+===================================================== */
+
+.statistic-legend{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    margin-top:20px;
+
+}
+
+.legend-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.legend-color{
+
+    width:14px;
+
+    height:14px;
+
+    border-radius:50%;
+
+}
+
+.legend-income{
+
+    background:var(--success);
+
+}
+
+.legend-expense{
+
+    background:var(--danger);
+
+}
+
+.legend-balance{
+
+    background:var(--primary);
+
+}
+
+.legend-item span{
+
+    font-size:14px;
+
+    color:var(--text);
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:768px){
+
+    .statistic-card{
+
+        padding:20px;
+
+    }
+
+    .chart-container{
+
+        width:180px;
+
+        height:180px;
+
+    }
+
+    .statistic-detail{
+
+        margin-top:24px;
+
+    }
+
+}
