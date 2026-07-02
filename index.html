@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<!-- =====================================================
+META
+===================================================== -->
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta
+name="theme-color"
+content="#FF8FB8">
+
+<title>
+
+Kas Bulanan SNA
+
+</title>
+
+<!-- =====================================================
+GOOGLE FONT
+===================================================== -->
+
+<link
+rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link
+rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<!-- =====================================================
+CSS
+===================================================== -->
+
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/summary.css">
+<link rel="stylesheet" href="css/progress.css">
+<link rel="stylesheet" href="css/transaction.css">
+<link rel="stylesheet" href="css/statistic.css">
+<link rel="stylesheet" href="css/insight.css">
+<link rel="stylesheet" href="css/footer.css">
+
+</head>
+
+<body>
+
+<div id="app">
+
+<!-- =====================================================
+HERO HEADER
+===================================================== -->
+
+<header
+id="hero"
+class="hero">
+
+<div class="hero-container">
+
+<div class="hero-badge">
+
+<span>
+
+💖
+
+</span>
+
+<span>
+
+Kas Bulanan SNA
+
+</span>
+
+</div>
+
+<h1
+id="heroGreeting">
+
+Halo, Kawan SNA 👋
+
+</h1>
+
+<p
+id="heroDescription">
+
+Yuk tambah kas bulanan bersama
+demi kesejahteraan kita.
+
+</p>
+
+<div
+id="heroQuote"
+class="hero-quote">
+
+🌸 Bersama kita menjaga kas tetap sehat.
+
+</div>
+
+<div class="hero-footer">
+
+<div class="hero-month">
+
+<span>
+
+📅
+
+</span>
+
+<span
+id="heroMonth">
+
+Juli 2026
+
+</span>
+
+</div>
+
+<div
+class="hero-version">
+
+v1.0.0
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- =====================================================
+SUMMARY
+===================================================== -->
+
+<section
+id="summary"
+class="section">
+
+<div class="section-header">
+
+<div class="section-title">
+
+💰 Ringkasan Kas
+
+</div>
+
+</div>
+
+<div class="summary-card">
+
+<div class="summary-balance">
+
+<div class="summary-label">
+
+Saldo Kas
+
+</div>
+
+<h2
+id="totalBalance">
+
+Rp0
+
+</h2>
+
+</div>
+
+<div class="summary-divider">
+
+</div>
+
+<div class="summary-grid">
+
+<div class="summary-item">
+
+<div class="summary-icon">
+
+📥
+
+</div>
+
+<div>
+
+<div class="summary-name">
+
+Kas Masuk
+
+</div>
+
+<strong
+id="totalIncome">
+
+Rp0
+
+</strong>
+
+</div>
+
+</div>
+
+<div class="summary-item">
+
+<div class="summary-icon">
+
+📤
+
+</div>
+
+<div>
+
+<div class="summary-name">
+
+Kas Keluar
+
+</div>
+
+<strong
+id="totalExpense">
+
+Rp0
+
+</strong>
+
+</div>
+
+</div>
+
+<div class="summary-item">
+
+<div class="summary-icon">
+
+🧾
+
+</div>
+
+<div>
+
+<div class="summary-name">
+
+Transaksi
+
+</div>
+
+<strong
+id="totalTransaction">
+
+0
+
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+PROGRESS PEMBAYARAN
+===================================================== -->
+
+<section
+id="progress"
+class="section">
+
+<div class="section-header">
+
+<div class="section-title">
+
+🌸 Progress Pembayaran
+
+</div>
+
+</div>
+
+<div class="progress-card">
+
+<div class="progress-header">
+
+<div>
+
+<h3
+id="progressTitle">
+
+Kas Bulan Juli
+
+</h3>
+
+<p
+id="progressText">
+
+0 / 0 Orang
+
+</p>
+
+</div>
+
+<div
+id="progressPercent">
+
+0%
+
+</div>
+
+</div>
+
+<div class="progress">
+
+<div
+id="progressBar"
+class="progress-bar">
+
+</div>
+
+</div>
+
+<div class="progress-divider">
+
+</div>
+
+<div class="unpaid-header">
+
+<h3>
+
+Belum Membayar
+
+</h3>
+
+<span
+id="unpaidCount">
+
+0 Orang
+
+</span>
+
+</div>
+
+<div
+id="unpaidContainer"
+class="unpaid-list">
+
+<div class="unpaid-item">
+
+🎉 Semua anggota sudah membayar.
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+TRANSAKSI & PENGELUARAN
+===================================================== -->
+
+<section
+id="activity"
+class="section">
+
+<div class="activity-grid">
+
+<!-- ==========================
+TRANSAKSI TERBARU
+========================== -->
+
+<div class="activity-card">
+
+<div class="section-header">
+
+<div class="section-title">
+
+🧾 Transaksi Terbaru
+
+</div>
+
+<a
+href="#"
+id="showAllTransaction"
+class="section-link">
+
+Lihat Semua
+
+</a>
+
+</div>
+
+<div
+id="transactionContainer"
+class="activity-list">
+
+<div class="activity-item">
+
+<div>
+
+<h4>
+
+Memuat...
+
+</h4>
+
+<p>
+
+-
+
+</p>
+
+</div>
+
+<strong>
+
+Rp0
+
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ==========================
+PENGELUARAN TERBARU
+========================== -->
+
+<div class="activity-card">
+
+<div class="section-header">
+
+<div class="section-title">
+
+💸 Pengeluaran
+
+</div>
+
+<a
+href="#"
+id="showAllExpense"
+class="section-link">
+
+Lihat Semua
+
+</a>
+
+</div>
+
+<div
+id="expenseContainer"
+class="activity-list">
+
+<div class="activity-item">
+
+<div>
+
+<h4>
+
+Memuat...
+
+</h4>
+
+<p>
+
+-
+
+</p>
+
+</div>
+
+<strong>
+
+Rp0
+
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+STATISTIK
+===================================================== -->
+
+<section
+id="statistic"
+class="section">
+
+<div class="section-header">
+
+<div class="section-title">
+
+🍩 Statistik Kas
+
+</div>
+
+</div>
+
+<div class="statistic-card">
+
+<div class="chart-container">
+
+<canvas
+id="donutChart">
+
+</canvas>
+
+</div>
+
+<div class="statistic-detail">
+
+<div class="statistic-item">
+
+<div>
+
+📥 Kas Masuk
+
+</div>
+
+<strong
+id="chartIncome">
+
+Rp0
+
+</strong>
+
+</div>
+
+<div class="statistic-item">
+
+<div>
+
+📤 Kas Keluar
+
+</div>
+
+<strong
+id="chartExpense">
+
+Rp0
+
+</strong>
+
+</div>
+
+<div class="statistic-item">
+
+<div>
+
+💖 Saldo
+
+</div>
+
+<strong
+id="chartBalance">
+
+Rp0
+
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+INSIGHT
+===================================================== -->
+
+<section
+id="insight"
+class="section">
+
+<div class="section-header">
+
+<div class="section-title">
+
+💡 Insight
+
+</div>
+
+</div>
+
+<div
+id="insightContainer"
+class="insight-list">
+
+<div class="insight-card">
+
+<div class="insight-icon">
+
+🌸
+
+</div>
+
+<div>
+
+<h3>
+
+Memuat Insight...
+
+</h3>
+
+<p>
+
+Mohon tunggu sebentar.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+FOOTER
+===================================================== -->
+
+<footer
+id="footer">
+
+<div class="footer-container">
+
+<h3>
+
+💖 Kas Bulanan SNA
+
+</h3>
+
+<p>
+
+Kelola kas bersama
+lebih mudah dan transparan.
+
+</p>
+
+<div class="footer-divider">
+
+</div>
+
+<div class="footer-bottom">
+
+<div>
+
+Last Update
+
+</div>
+
+<strong
+id="lastSync">
+
+-
+
+</strong>
+
+</div>
+
+</div>
+
+</footer>
+
+</div>
+
+<!-- =====================================================
+LOADING
+===================================================== -->
+
+<div
+id="loadingOverlay"
+class="hidden">
+
+<div class="loading-card">
+
+<div class="loading-spinner">
+
+</div>
+
+<h3>
+
+Memuat Data...
+
+</h3>
+
+<p>
+
+Mengambil data dari Google Spreadsheet
+
+</p>
+
+</div>
+
+</div>
+
+<!-- =====================================================
+EMPTY STATE
+===================================================== -->
+
+<div
+id="emptyState"
+class="hidden">
+
+<div class="empty-card">
+
+<h2>
+
+📭
+
+</h2>
+
+<h3>
+
+Belum Ada Data
+
+</h3>
+
+<p>
+
+Data kas masih kosong.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- =====================================================
+ERROR STATE
+===================================================== -->
+
+<div
+id="errorState"
+class="hidden">
+
+<div class="error-card">
+
+<h2>
+
+⚠️
+
+</h2>
+
+<h3>
+
+Terjadi Kesalahan
+
+</h3>
+
+<p
+id="errorMessage">
+
+-
+
+</p>
+
+</div>
+
+</div>
+
+<!-- =====================================================
+JAVASCRIPT
+===================================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="js/utils.js"></script>
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/process.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/table.js"></script>
+<script src="js/insight.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/events.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+  </html>
+  
