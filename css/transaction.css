@@ -1,0 +1,231 @@
+/* =====================================================
+   KAS BULANAN SNA
+   FILE : css/transaction.css
+   DESCRIPTION : Transaction & Expense
+===================================================== */
+
+
+/* =====================================================
+   ACTIVITY CARD
+===================================================== */
+
+.activity-card{
+
+    padding:24px;
+
+}
+
+
+/* =====================================================
+   LIST
+===================================================== */
+
+.activity-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+
+/* =====================================================
+   ITEM
+===================================================== */
+
+.activity-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:16px;
+
+    padding:16px;
+
+    border-radius:16px;
+
+    background:var(--secondary);
+
+    transition:var(--transition);
+
+}
+
+.activity-item:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+
+/* =====================================================
+   INFO
+===================================================== */
+
+.activity-info{
+
+    flex:1;
+
+}
+
+.activity-info h4{
+
+    margin-bottom:4px;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    color:var(--text);
+
+}
+
+.activity-info p{
+
+    font-size:13px;
+
+    color:var(--text-light);
+
+}
+
+
+/* =====================================================
+   VALUE
+===================================================== */
+
+.activity-value{
+
+    text-align:right;
+
+}
+
+.activity-value strong{
+
+    display:block;
+
+    margin-bottom:4px;
+
+    font-size:16px;
+
+    font-weight:700;
+
+}
+
+.activity-value span{
+
+    font-size:12px;
+
+    color:var(--text-light);
+
+}
+
+
+/* =====================================================
+   TYPE
+===================================================== */
+
+.activity-item.income{
+
+    border-left:5px solid var(--success);
+
+}
+
+.activity-item.income .activity-value strong{
+
+    color:var(--success);
+
+}
+
+
+.activity-item.expense{
+
+    border-left:5px solid var(--danger);
+
+}
+
+.activity-item.expense .activity-value strong{
+
+    color:var(--danger);
+
+}
+
+
+/* =====================================================
+   EMPTY
+===================================================== */
+
+.activity-empty{
+
+    padding:32px 20px;
+
+    text-align:center;
+
+    border-radius:16px;
+
+    background:var(--secondary);
+
+    color:var(--text-light);
+
+}
+
+.activity-empty h4{
+
+    margin-bottom:8px;
+
+}
+
+
+/* =====================================================
+   LINK
+===================================================== */
+
+.section-link{
+
+    font-size:13px;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+    transition:var(--transition);
+
+}
+
+.section-link:hover{
+
+    opacity:.7;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:768px){
+
+    .activity-card{
+
+        padding:20px;
+
+    }
+
+    .activity-item{
+
+        padding:14px;
+
+    }
+
+    .activity-value strong{
+
+        font-size:15px;
+
+    }
+
+}
