@@ -30,7 +30,7 @@ const APP={
 
 const SHEET={
 
-    ID:"",
+    ID:"17dJQbzzCf6q2nDRbtq0vXKcPa1sPK8w7t92NFUtkINs",
 
     TRANSACTION:"transaksi"
 
