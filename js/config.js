@@ -11,7 +11,7 @@
 
 const APP={
 
-    NAME:"Kas Bulanan SNA",
+    NAME:"Kas Bulanan Team Ironing",
 
     VERSION:"1.0.0",
 
